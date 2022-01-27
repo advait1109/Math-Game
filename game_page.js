@@ -7,8 +7,8 @@ document.getElementById("player_1").innerHTML=player_name1+" : ";
 document.getElementById("player_2").innerHTML=player_name2+" : ";
 document.getElementById("player1Score").innerHTML=player_score1;
 document.getElementById("player2Score").innerHTML=player_score2;
-document.getElementById("quest").innerHTML="Question Turn - "+player_name1;
-document.getElementById("ans").innerHTML="Answer Turn - "+player_name2;
+document.getElementById("player_Question").innerHTML="Question Turn - "+player_name1;
+document.getElementById("player_Answer").innerHTML="Answer Turn - "+player_name2;
 
 function send(){
     Number1=document.getElementById("n1").value;
@@ -20,7 +20,8 @@ function send(){
     check_button="<br> <br> <button class='btn btn-info' onclick='check()'>Check</button>";
     var row= quetion_word+input_box+check_button;
     document.getElementById("output").innerHTML=row;
-    document.getElementById("word").value="";
+    document.getElementById("n1").value="";
+    document.getElementById("n2").value="";
 }
 question_turn="player1";
 answer_turn="player2";
